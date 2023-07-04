@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4 (Products and Shopping Cart)</title>
+    <link rel="stylesheet" href="./dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="cart-section">
+            <header id="cart-header">
+                <h3>Cart Products</h3>
+                <button class="btn btn-danger clear-btn">Clear Cart</button>
+            </header>
+            <div>
+                <table class="table table-sm table-bordered table-responsive">
+                    <thead>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                        <td>Total Price</td>
+                        <td>Options</td>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="subTotal"></td>
+                        </tr>
+                        <tr>
+                            <td id="discount" colspan="6">
+                                <label for="disInput" id="disLabel">Discount</label>
+                                <input type="text" id="disInput">TK
+                                <button class="btn btn-md btn-primary" id="disBtn">ok</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section class="product-section">
+            <h3>Product List</h3>
+            <div class="product-list">
+            </div>
+        </section>
+    </div>
+    <script src="./dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./dist/js/main.js"></script>
+</body>
+</html>

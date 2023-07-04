@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 20px;
+}
+/* ------------------------------Cart Section ------------------ */
+/* header section */
+.cart-section{
+    display: none;
+}
+#cart-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#cart-header .clear-btn{
+    align-items: flex-end;
+}
+
+.table tr td input{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10%;
+}
+#subTotal{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+}
+#discount{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+    border-top: 0px;
+}
+#discount #disBtn{
+    margin-left: 5px;
+}
+#discount #disLabel{
+    margin-right: 5px;
+}
+#discount #disInput{
+    width:15%;
+    margin-right: 5px;
+}
+/* -----------------------------Product section------------------ */
+.product-section h3,.cart-section h3{
+    text-align: center;
+    text-decoration: underline;
+}
+h4{
+    font-size: 20px;
+}
+/* this is the hidden id field */
+.product-list .card .card-body .hidden{
+    display: none;
+}
+.product-list{
+    /* background-color: aqua; */
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 400px 400px 400px;
+    justify-content: space-evenly;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.product-list .card{
+    height: 350px;
+    padding: 3px;
+}
+/* media query */
+@media screen and (max-width: 900px){
+    .product-list{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 280px 280px;
+        grid-template-rows: 400px 400px;
+        justify-content: space-evenly;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .product-list .card{
+        height: 350px;
+        padding: 3px;
+    }
+}
+@media screen and (max-width: 530px){
+    .product-list{
+        /* display: grid;
+        margin-top: 50px;
+        grid-template-columns: 280px 280px 280px;
+        grid-template-rows: 400px 400px 400px;
+        justify-content: space-evenly;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .product-list .card{
+        height: 350px;
+        padding: 3px;
+    }
+}
+
+
+
+
+
+/*add to cart button and the qty field */
+.btnQtyDiv{
+    display: flex;
+    flex-direction: row;
+}
+.btnQtyDiv .btn{
+    flex-grow: 1;
+    margin-right: 2px;
+}
+.btnQtyDiv .labelQty{
+    margin-top:5px;
+    margin-left: 5px;
+}
+.btnQtyDiv input{
+    flex-grow: 1;
+    height: 37px;
+    width: 40px;
+    padding: 7px;
+    border-radius: 10%;
+}
+/* the actual card */
+.card{
+    overflow: hidden;
+}
+.card .image:hover{
+    transform: scale(1.1);
+    transition: all 0.60s;
+}
+.product-list .card .card-body button{
+    border: 1px solid;
+    border-color: blueviolet;
+}
+.card .card-body button:hover{
+    color: white;
+    background-color: violet;
+}
